@@ -35,5 +35,15 @@ namespace LeapYearCodeKataTests
 
             Assert.IsFalse(isLeapYear);
         }
+
+        [TestMethod]
+        public void it_is_leap_year_when_is_divisible_by_4_and_400()
+        {
+            var checker = new LeapYearChecker();
+
+            var isLeapYear = checker.IsLeap(1900);
+
+            Assert.IsTrue(isLeapYear);
+        }
     }
 }
