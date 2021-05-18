@@ -41,7 +41,7 @@ namespace LeapYearCodeKataTests
         {
             var checker = new LeapYearChecker();
 
-            var isLeapYear = checker.IsLeap(1900);
+            var isLeapYear = checker.IsLeap(2000);
 
             Assert.IsTrue(isLeapYear);
         }
