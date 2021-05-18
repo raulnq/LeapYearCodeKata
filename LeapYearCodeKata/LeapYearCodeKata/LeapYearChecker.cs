@@ -4,12 +4,7 @@
     {
         public bool IsLeap(int year)
         {
-            if (IsNotTypicalLeap(year))
-            {
-                return false;
-            }
-
-            return year % 4 == 0;
+            return year % 4 == 0 && !IsNotTypicalLeap(year);
         }
 
         private static bool IsNotTypicalLeap(int year)
